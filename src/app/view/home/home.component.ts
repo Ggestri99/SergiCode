@@ -15,7 +15,11 @@ export class HomeComponent {
   ) {}
 
 
-  red() {
+  form() {
     this.router.navigate(['/form'])
+  }
+
+  grid() {
+    this.router.navigate(['/grid'])
   }
 }

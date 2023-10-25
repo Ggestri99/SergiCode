@@ -7,7 +7,9 @@ import { FormComponent } from './form/form.component';
 import { GridComponent } from './grid/grid.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCardModule } from '@angular/material/card';
-
+import { MatButtonModule } from '@angular/material/button';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
@@ -20,7 +22,11 @@ import { MatCardModule } from '@angular/material/card';
     CommonModule,
     ViewRoutingModule,
     MatSlideToggleModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule
 
   ]
 })

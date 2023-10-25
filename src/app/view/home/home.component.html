@@ -1,20 +1,30 @@
-<div>
-    <div>
-        <div>
+<div class="centered-content" >
+    <div class="content">
+        <div class="center-vertically">
             <div class="text-challenge">
-                <mat-card class="">
-                    <mat-card-header>
-                      <mat-card-title>Sergi Code Challenge</mat-card-title>
+                <mat-card>
+                    <mat-card-header style="background-color: white;">
+                        <div>
+                            <mat-card-title>Sergi Code Challenge</mat-card-title>
+                        </div>
                     </mat-card-header>
-                  </mat-card>
+                </mat-card>
             </div>
 
             <div class="log-angular">
-
+                <mat-card class="example-card" style="background-color: white;">
+                    <img mat-card-image src="../../../assets/angular.png"
+                        alt="Photo of a Shiba Inu">
+                </mat-card>
             </div>
         </div>
-        <div class="buttons-redirect">
-
+        <div class="buttons-redirect d-flex justify-content-evenly">
+            <div>
+                <button mat-raised-button color="primary" (click)="form()">Formulario</button>
+            </div>
+            <div>
+                <button mat-raised-button color="primary" (click)="grid()">Grid</button>
+            </div>
         </div>
     </div>
 </div>
