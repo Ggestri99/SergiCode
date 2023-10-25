@@ -9,14 +9,18 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ModalComponent } from './form/components/modal/modal.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     FormComponent,
-    GridComponent
+    GridComponent,
+    ModalComponent
   ],
   imports: [
     CommonModule,
@@ -26,8 +30,9 @@ import {MatInputModule} from '@angular/material/input';
     MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
-    MatInputModule
-
+    MatInputModule,
+    MatIconModule,
+    MatDialogModule,
   ]
 })
 export class ViewModule { }
