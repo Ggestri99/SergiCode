@@ -7,7 +7,8 @@ import { ModalComponent } from './components/modal/modal.component';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
+  styleUrls: ['./form.component.scss'],
+  
 })
 export class FormComponent {
 
@@ -16,8 +17,8 @@ export class FormComponent {
     surname: ['', []],
     email: ['', []],
     phone: ['', []],
-    country: ['', []],
-    city: ['', []]
+    adress: ['', []],
+    country: ['', []]
   })
 
 
@@ -39,8 +40,8 @@ export class FormComponent {
         surname: this.myForm.get('surname')?.value,
         email: this.myForm.get('email')?.value,
         phone: this.myForm.get('phone')?.value,
-        city: this.myForm.get('city')?.value,
-        country: this.myForm.get('country')?.value
+        country: this.myForm.get('country')?.value,
+        adress: this.myForm.get('adress')?.value
       },
     });
 

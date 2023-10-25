@@ -20,6 +20,9 @@
 
 .text-challenge {
     width: 46%;
+    display: flex;
+    justify-content: center;
+    padding: 17px;
 }
 
 .log-angular {
@@ -27,7 +30,6 @@
 }
 
 .content {
-    border: 1px solid red;
     width: 48%;
     height: 86%;
     display: flex;

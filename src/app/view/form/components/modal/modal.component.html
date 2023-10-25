@@ -1,17 +1,27 @@
-<h1 mat-dialog-title>Hi {{data.name}}</h1>
-<h1 mat-dialog-title>Hi {{data.surname}}</h1>
-<h1 mat-dialog-title>Hi {{data.city}}</h1>
-<h1 mat-dialog-title>Hi {{data.email}}</h1>
-<h1 mat-dialog-title>Hi {{data.phone}}</h1>
-<h1 mat-dialog-title>Hi {{data.country}}</h1>
-<div mat-dialog-content>
-  <p>What's your favorite animal?</p>
-  <mat-form-field>
-    <mat-label>Favorite Animal</mat-label>
-    <input matInput [(ngModel)]="data.animal">
-  </mat-form-field>
-</div>
-<div mat-dialog-actions>
-  <!-- <button mat-button (click)="onNoClick()">No Thanks</button> -->
-  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
-</div>
+<mat-card class="example-card">
+  <mat-card-content>
+    <h2 class="example-card-title">Información del Usuario</h2>
+    <ul class="list-unstyled">
+      <li>
+        <strong>Nombre:</strong> {{ data.name }}
+      </li>
+      <li>
+        <strong>Apellido:</strong> {{ data.surname }}
+      </li>
+      <li>
+        <strong>Email:</strong> {{ data.email }}
+      </li>
+      <li>
+        <strong>Celular:</strong> {{ data.phone }}
+      </li>
+      <li>
+        <strong>Dirección:</strong> {{ data.adress }}
+      </li>
+      <li>
+        <strong>Nacionalidad:</strong> {{ data.country }}
+      </li>
+    </ul>
+  </mat-card-content>
+</mat-card>
+
+

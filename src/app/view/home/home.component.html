@@ -5,7 +5,7 @@
                 <mat-card>
                     <mat-card-header style="background-color: white;">
                         <div>
-                            <mat-card-title>Sergi Code Challenge</mat-card-title>
+                            <h2>Sergi Code Challenge</h2>
                         </div>
                     </mat-card-header>
                 </mat-card>
@@ -20,7 +20,7 @@
         </div>
         <div class="buttons-redirect d-flex justify-content-evenly">
             <div>
-                <button mat-raised-button color="primary" (click)="form()">Formulario</button>
+                <button mat-raised-button color="primary" [routerLink]="['/form']">Formulario</button>
             </div>
             <div>
                 <button mat-raised-button color="primary" (click)="grid()">Grid</button>

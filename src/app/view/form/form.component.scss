@@ -30,7 +30,6 @@
 }
 
 .content {
-    border: 1px solid red;
     width: 48%;
     height: 86%;
     display: flex;
@@ -49,3 +48,9 @@
   .back {
     padding-right: 48%;
   }
+
+  .mat-datepicker-content {
+    height: 36px; /* Ajusta la altura según tus necesidades */
+  }
+  
+  
