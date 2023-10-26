@@ -15,6 +15,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ModalComponent } from './form/components/modal/modal.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { NgxMaskDirective } from 'ngx-mask';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatIconModule,
     MatDialogModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    NgxMaskDirective
   ]
 })
 export class ViewModule { }

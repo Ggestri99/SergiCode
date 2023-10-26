@@ -17,20 +17,27 @@
                 </mat-card>
             </div>
         </div>
+
         <div class="d-flex justify-content-center">
             <form [formGroup]="myForm">
                 <div class="row">
                     <div class="col-md-6">
                         <mat-form-field class="example-full-width">
                             <mat-label>Nombre</mat-label>
-                            <input matInput formControlName="name">
+                            <input matInput formControlName="name" [inputTransformFn]="inputTransformFn"
+                                [outputTransformFn]="outputTransformFn" mask="S*" />
+                            <mat-error *ngIf="myForm.get('name')?.hasError('required')">El nombre es
+                                requerido.</mat-error>
                         </mat-form-field>
                     </div>
 
                     <div class="col-md-6">
                         <mat-form-field class="example-full-width">
                             <mat-label>Apellido</mat-label>
-                            <input matInput formControlName="surname">
+                            <input matInput formControlName="surname" [inputTransformFn]="inputTransformFn"
+                            [outputTransformFn]="outputTransformFn" mask="S*">
+                            <mat-error *ngIf="myForm.get('surname')?.hasError('required')">El apellido es
+                                requerido.</mat-error>
                         </mat-form-field>
                     </div>
                 </div>
@@ -40,13 +47,19 @@
                         <mat-form-field class="example-full-width">
                             <mat-label>Email</mat-label>
                             <input matInput formControlName="email">
+                            <mat-error *ngIf="myForm.get('email')?.hasError('required')">El correo es
+                                requerido.</mat-error>
+                            <mat-error *ngIf="myForm.get('email')?.hasError('email')">El correo no es
+                                válido.</mat-error>
                         </mat-form-field>
                     </div>
 
                     <div class="col-md-6">
                         <mat-form-field class="example-full-width">
                             <mat-label>Celular</mat-label>
-                            <input matInput formControlName="phone">
+                            <input matInput formControlName="phone" type='text' mask="9999999999" [allowNegativeNumbers]="false">
+                            <mat-error *ngIf="myForm.get('phone')?.hasError('required')">El número de celular es
+                                requerido.</mat-error>
                         </mat-form-field>
                     </div>
                 </div>
@@ -55,7 +68,9 @@
                     <div class="col-md-6">
                         <mat-form-field class="example-full-width">
                             <mat-label>Dirección</mat-label>
-                            <input matInput formControlName="adress">
+                            <input matInput formControlName="address">
+                            <mat-error *ngIf="myForm.get('address')?.hasError('required')">La dirección es
+                                requerida.</mat-error>
                         </mat-form-field>
                     </div>
 
@@ -63,6 +78,8 @@
                         <mat-form-field class="example-full-width">
                             <mat-label>Nacionalidad</mat-label>
                             <input matInput formControlName="country">
+                            <mat-error *ngIf="myForm.get('country')?.hasError('required')">La nacionalidad es
+                                requerida.</mat-error>
                         </mat-form-field>
                     </div>
                 </div>
@@ -74,7 +91,7 @@
                                 <button mat-flat-button color="primary" (click)="home()">Volver</button>
                             </div>
                             <div>
-                                <button mat-flat-button color="primary" (click)="openDialog()">Enviar</button>
+                                <button mat-flat-button color="primary" (click)="openDialog()" [disabled]="myForm.valid">Enviar</button>
                             </div>
                         </div>
                     </div>

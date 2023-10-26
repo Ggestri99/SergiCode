@@ -13,4 +13,8 @@ export class ModalComponent {
     @Inject(MAT_DIALOG_DATA) public data: any,
   ) {}
 
+  cerrarModal(): void {
+    this.dialogRef.close();
+
+  }
 }

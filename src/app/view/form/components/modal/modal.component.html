@@ -1,6 +1,17 @@
 <mat-card class="example-card">
   <mat-card-content>
-    <h2 class="example-card-title">Información del Usuario</h2>
+    <div>
+      <div>
+        <button mat-icon-button (click)="cerrarModal()" class="cerrar-icon">
+          <mat-icon style="color: red;">close</mat-icon>
+        </button>
+      </div>
+      <div>
+        <h2 class="example-card-title">Información del Usuario</h2>
+      </div>
+
+    </div>
+
     <ul class="list-unstyled">
       <li>
         <strong>Nombre:</strong> {{ data.name }}
@@ -15,7 +26,7 @@
         <strong>Celular:</strong> {{ data.phone }}
       </li>
       <li>
-        <strong>Dirección:</strong> {{ data.adress }}
+        <strong>Dirección:</strong> {{ data.address }}
       </li>
       <li>
         <strong>Nacionalidad:</strong> {{ data.country }}
@@ -23,5 +34,3 @@
     </ul>
   </mat-card-content>
 </mat-card>
-
-
