@@ -1,6 +1,8 @@
 import { ChangeDetectionStrategy } from '@angular/compiler';
 import { ChangeDetectorRef, Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { DefaultSortingStrategy, ISortingOptions, IgxGridComponent, SortingDirection } from 'igniteui-angular';
+
 
 export const generateEmployeeFlatData: () => IEmployee[] = () => ([
   {
@@ -216,7 +218,8 @@ export class GridComponent {
   public sortingOptions: ISortingOptions = this.sortingTypes[1];
 
   constructor(
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
+    private router: Router,
   ) { 
     console.log(this.data)
   }
@@ -241,6 +244,10 @@ export class GridComponent {
 
   handleSearchResults(event: KeyboardEvent) {
       event.preventDefault();
+  }
+
+  home() {
+    this.router.navigate(['/home'])
   }
 }
 
