@@ -1,5 +1,5 @@
 <div class="grid__wrapper">
-    <igx-grid  #grid1 [data]="data" [autoGenerate]="false" height="500px" width="100%" [sortingOptions]="sortingOptions">
+    <igx-grid   #grid1 [data]="data" [moving]="true" [autoGenerate]="false" height="850px" width="100%" [allowFiltering]="true" [filterMode]="'excelStyleFilter'">
         <igx-column field="ID" header="ID" [groupable]="true"  [sortable]="true">
         </igx-column>
         <igx-column field="Name" header="Name" [dataType]="'string'" [groupable]="true" [sortable]="true">
@@ -9,6 +9,8 @@
         <igx-column field="Title" header="Title" [dataType]="'string'" [groupable]="true" [sortable]="true">
         </igx-column>
         <igx-column field="ShippedDate" header="Shipped Date" [dataType]="'date'" [formatter]="formatDate" [sortable]="true">
+        </igx-column>
+        <igx-column field="ProductName" header="Product Name" [sortable]="true" [dataType]="'string'">
         </igx-column>
     </igx-grid>
 </div>
