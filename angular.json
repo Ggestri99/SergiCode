@@ -3,6 +3,15 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "netlifyAngular":{
+      "projectType": "application",
+      "root": "src",
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      }
+    },
     "challengeCode": {
       "projectType": "application",
       "schematics": {
@@ -17,7 +26,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/challenge-code",
+            "outputPath": "dist/netlifyAngular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
