@@ -13,9 +13,11 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ModalComponent } from './form/components/modal/modal.component';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { NgxMaskDirective } from 'ngx-mask';
+import { IgxActionStripModule, IgxAvatarModule, IgxBadgeModule, IgxBannerModule, IgxButtonGroupModule, IgxButtonModule, IgxCheckboxModule, IgxChipsModule, IgxDatePickerModule, IgxDialogModule, IgxDragDropModule, IgxFocusModule, IgxGridModule, IgxIconModule, IgxInputGroupModule, IgxListModule, IgxRadioModule, IgxRippleModule, IgxSelectModule, IgxSimpleComboModule, IgxSliderModule, IgxSnackbarModule, IgxSwitchModule, IgxToastModule, IgxToggleModule, IgxTooltipModule, IgxTreeGridModule } from 'igniteui-angular';
+
 
 
 @NgModule({
@@ -38,7 +40,34 @@ import { NgxMaskDirective } from 'ngx-mask';
     MatDialogModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    NgxMaskDirective
+    NgxMaskDirective,
+        IgxTreeGridModule,
+        IgxGridModule,
+        IgxActionStripModule,
+        IgxButtonGroupModule,
+        IgxIconModule,
+        IgxSliderModule,
+        IgxToggleModule,
+        IgxButtonModule,
+        IgxSwitchModule,
+        IgxRippleModule,
+        IgxDialogModule,
+        IgxRadioModule,
+        IgxAvatarModule,
+        IgxToastModule,
+        IgxSelectModule,
+        IgxBannerModule,
+        IgxBadgeModule,
+        IgxCheckboxModule,
+        IgxSnackbarModule,
+        IgxTooltipModule,
+        IgxListModule,
+        IgxChipsModule,
+        IgxDatePickerModule,
+        IgxSimpleComboModule,
+        IgxInputGroupModule,
+        IgxDragDropModule,
+        IgxFocusModule
   ]
 })
 export class ViewModule { }
