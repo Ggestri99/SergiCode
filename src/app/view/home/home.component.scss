@@ -1,46 +1,61 @@
-.example-card {
-    max-width: 400px;
-}
-
-.example-header-image {
-    background-image: src('../../../assets/angular.png');
-    background-size: cover;
-}
-
-.justify-content-evenly {
-    justify-content: space-evenly;
-}
-
-.center-vertically {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.text-challenge {
-    width: 46%;
-    display: flex;
-    justify-content: center;
-    padding: 17px;
-}
-
-.log-angular {
-    width: 10%;
-}
-
-.content {
-    width: 48%;
-    height: 86%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 24px 0px;
-}
-
 .centered-content {
     display: flex;
     justify-content: center;
-    height: 100%;
     align-items: center;
+    height: 100vh; /* Asegura que el contenido esté centrado verticalmente en la pantalla */
   }
+  
+  .content {
+    width: 100%;
+    max-width: 600px; /* Establece un ancho máximo para el contenido */
+    padding: 24px;
+  }
+  
+  .log-angular {
+    width: 50%;
+    text-align: center; /* Centra la imagen horizontalmente */
+  }
+  
+  .buttons-redirect {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px; /* Espacio entre los botones */
+  }
+  
+  .example-card {
+    background-color: white;
+    text-align: center; /* Centra el contenido en el centro de la tarjeta */
+  }
+
+  .center-vertically {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+  
+  /* Utiliza media queries para adaptar el diseño en pantallas más pequeñas */
+  @media (max-width:600px) {
+    .content {
+      padding: 16px;
+    }
+  
+    .buttons-redirect {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons-redirect div:first-child{
+        margin-bottom: 16px;
+    }
+
+    .center-vertically{
+        margin-bottom: 0px;
+    }
+
+    .log-angular {
+        width: 30%;
+        text-align: center; /* Centra la imagen horizontalmente */
+      }
+  }
+  
