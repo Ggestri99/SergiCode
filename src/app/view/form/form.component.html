@@ -68,7 +68,7 @@
                             <button mat-flat-button color="primary" (click)="home()">Volver</button>
                         </div>
                         <div>
-                            <button mat-flat-button color="primary" (click)="openDialog()" [disabled]="myForm.valid">Enviar</button>
+                            <button mat-flat-button color="primary" (click)="openDialog()" [disabled]="!myForm.valid">Enviar</button>
                         </div>
                     </div>
                 </div>

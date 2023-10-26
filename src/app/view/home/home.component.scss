@@ -2,29 +2,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Asegura que el contenido esté centrado verticalmente en la pantalla */
+    height: 100vh; 
   }
   
   .content {
     width: 100%;
-    max-width: 600px; /* Establece un ancho máximo para el contenido */
+    max-width: 600px; 
     padding: 24px;
   }
   
   .log-angular {
     width: 50%;
-    text-align: center; /* Centra la imagen horizontalmente */
+    text-align: center; 
   }
   
   .buttons-redirect {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 20px; /* Espacio entre los botones */
+    margin-top: 20px; 
   }
   
   .example-card {
     background-color: white;
-    text-align: center; /* Centra el contenido en el centro de la tarjeta */
+    text-align: center; 
   }
 
   .center-vertically {
@@ -33,7 +33,7 @@
     margin-bottom: 64px;
   }
   
-  /* Utiliza media queries para adaptar el diseño en pantallas más pequeñas */
+
   @media (max-width:600px) {
     .content {
       padding: 16px;
@@ -55,7 +55,7 @@
 
     .log-angular {
         width: 30%;
-        text-align: center; /* Centra la imagen horizontalmente */
+        text-align: center;
       }
   }
   
